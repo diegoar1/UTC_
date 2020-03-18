@@ -7,7 +7,7 @@
           <!-- <h2 class="h3 text-primary font-weight-normal mb-0">Welcome <span class="font-weight-semi-bold">back</span></h2>
           <p>Login to manage your account.</p> -->
           <h1 class="logo-name" style="color: #e6e6e6;font-size: 180px;font-weight: 800;align-content: center;text-align: center;">UTC</h1>
-          <p style="text-align: center;">Sistema Intergal Universitario (SIU)</p>
+          <p style="text-align: center;">Sistema Integral Universitario (SIU)</p>
         </div>
         <!-- End Title -->
 

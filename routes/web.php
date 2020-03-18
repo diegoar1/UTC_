@@ -22,6 +22,10 @@ Route::get('/Login', function () {
     return view('inicio.login');
 });
 
+Route::get('/home', function () {
+    return view('Dashboard.home');
+})->name('Dashboard.home');
+
 Route::get('students', function () {
     // $students = User::all();
     $students = User::where('IsAlumno','1')->where('IsActivo', '1')->orderBy('created_at', 'desc')->get();
@@ -65,3 +69,31 @@ Route::put('/students/{id}', function (Request $request, $id) {
     $student -> save();
     return redirect()->route('students.index')->with('info','Alumno actualizado correctamente.');
 })->name('students.update');
+
+
+Route::get('teachers', function () {
+    // $students = User::all();
+    $teachers = User::where('IsAlumno','0')->where('IsActivo', '1')->orderBy('created_at', 'desc')->get();
+    return view('teachers.index', compact('teachers'));
+})->name('teachers.index');
+
+Route::get('teachers/create', function () {
+    return view('teachers.create');
+})->name('teachers.create');
+
+Route::post('teachers', function (Request $request ) {
+    //  $request->all();
+     $newStudent = new User;
+     $newStudent -> name = $request -> input('name');
+     $newStudent -> email = $request -> input('email');
+     $newStudent -> password = $request -> input('password');
+     $newStudent -> IsAlumno = 0;
+     $newStudent -> IsActivo = true;
+     $newStudent -> save();
+
+     return redirect()->route('teachers.index')->with('info','Profesor creado correctamente.');
+})->name('teachers.store');
+
+Route::get('/ClaseCalculo', function () {
+    return view('clases.ClaseCalculo');
+})->name('clases.ClaseCalculo');

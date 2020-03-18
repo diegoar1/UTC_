@@ -10,7 +10,7 @@
 
     <link href="../../DashboardLayout/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../DashboardLayout/font-awesome/css/font-awesome.css" rel="stylesheet">
-
+    <link href="../../DashboardLayout/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     <!-- Toastr style -->
     <link href="../../DashboardLayout/css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
@@ -33,26 +33,40 @@
                                 <i class="fa fa-user fa-5x" aria-hidden="true"></i>
                             </span>
                             <span class="clear"> <span class="block m-t-xs">
-                                <strong class="font-bold">David Williams</strong>
+                                <strong class="font-bold">admin</strong>
                             </span>
                         </div>
                         <div class="logo-element">
                             UTC
                         </div>
                     </li>
-                    <li class="active">
+                    <li>
+                        <a href="{{route('Dashboard.home')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Home</span></a>
+                    </li>
+                    <li >
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Alumnos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class="active"><a href="{{route('students.index')}}">Listado</a></li>
-                            <!-- <li><a href="{{route('students.create')}}">Dar de alta</a></li> -->
                         </ul>
                     </li>
-                    <li>
+                    <li >
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Profesores</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="{{route('teachers.index')}}">Listado</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Clases</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="{{route('clases.ClaseCalculo')}}">Calculo integral</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
                         <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
                     </li>
                     <li>
                         <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -86,16 +100,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="wrapper wrapper-content">
-                                <div class="row">
-                                    @yield('contenido')
-                                </div>
-                        </div>
-                        <div class="footer">
-                            <div>
-                                <strong>Copyright</strong> Example Company &copy; 2014-2015
-                            </div>
-                        </div> -->
             <div id="right-sidebar">
                 <div class="sidebar-container">
 
