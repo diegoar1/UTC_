@@ -41,7 +41,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="{{route('Dashboard.home')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Home</span></a>
+                        <a href="{{url('/home')}}"><i class="fa fa-diamond"></i> <span class="nav-label">Home</span></a>
                     </li>
                     <li >
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Alumnos</span> <span class="fa arrow"></span></a>
@@ -79,9 +79,14 @@
                     </div>
                         <ul class="nav navbar-top-links navbar-right">
                             <li>
-                                <a href="login.html">
-                                    <i class="fa fa-sign-out"></i> Cerrar sesion
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+								document.getElementById('logout-form').submit();" >
+                                    <i class="fa fa-sign-out"></i> Cerrar sesión
                                 </a>
+								
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                </form>
                             </li>
                         </ul>
                 </nav>

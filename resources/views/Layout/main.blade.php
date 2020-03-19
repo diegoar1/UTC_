@@ -60,7 +60,7 @@
                   data-animation-out="fadeOut"
                   data-position="left"
                   >
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="/Login" aria-haspopup="true" aria-expanded="false">UTC Online</a>
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="/login" aria-haspopup="true" aria-expanded="false">UTC Online</a>
               </li>
             </ul>
           </div>
