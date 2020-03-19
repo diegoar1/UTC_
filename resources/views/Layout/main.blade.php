@@ -88,6 +88,43 @@
             Política de Privacidad</p>
           </div>
         </div>
+        <div class="row justify-content-md-between">
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                <h4 class="h6 font-weight-semi-bold" style="color: white;">Acerca de</h4>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a style="color: white;" href="../pages/about-agency.html">Inicio</a></li>
+                <li><a style="color: white;" href="../pages/services-agency.html">UT online</a></li>
+                <li><a  style="color: white;" href="../pages/careers.html">Plan de estudios</a></li>
+                </ul>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                <!-- <h4 class="h6 font-weight-semi-bold" style="color: white;" >Account</h4>
+
+                <!-- List Group -->
+                <!-- <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a style="color: white;" href="../account/dashboard.html">Account</a></li>
+                <li><a  style="color: white;" href="../account/my-tasks.html">My tasks</a></li>
+                <li><a  style="color: white;" href="../account/projects.html">Projects</a></li>
+                </ul>  -->
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                <h4 class="h6 font-weight-semi-bold" style="color: white;">Redes sociales</h4>
+
+                <!-- List Group -->
+                <ul class="list-group list-group-flush list-group-borderless mb-0">
+                <li><a  style="color: white;" href="../pages/faq.html">Facebook</a></li>
+                <li><a  style="color: white;" href="../pages/terms.html">Twitter</a></li>
+                <li><a  style="color: white;" href="../pages/privacy.html">Google</a></li>
+                </ul>
+                <!-- End List Group -->
+            </div>
+        </div>
       </div>
     </div>
 
