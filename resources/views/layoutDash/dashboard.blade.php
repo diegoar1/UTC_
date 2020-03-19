@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Universidad Tecnológica de Cancún</title>
-
+    <link rel="shortcut icon" href="..\assets\img\ut_favicon.png"/>
     <link href="../../DashboardLayout/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../DashboardLayout/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../DashboardLayout/css/plugins/dataTables/datatables.min.css" rel="stylesheet">
